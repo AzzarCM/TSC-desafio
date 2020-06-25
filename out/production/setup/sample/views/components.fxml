@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.views.Components">
+   <children>
+      <Label layoutX="224.0" layoutY="246.0" prefHeight="103.0" prefWidth="553.0" text="DEFINIENDO LOS">
+         <font>
+            <Font size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="349.0" prefHeight="103.0" prefWidth="535.0" text="COMPONENTES ">
+         <font>
+            <Font size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="288.0" layoutY="452.0" prefHeight="103.0" prefWidth="425.0" text="MATRICIALES">
+         <font>
+            <Font size="70.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

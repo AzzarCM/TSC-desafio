@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Step5.K1component">
+   <children>
+      <ImageView fitHeight="474.0" fitWidth="699.0" layoutX="151.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/matrixk1.PNG" />
+         </image>
+      </ImageView>
+      <Button layoutX="876.0" layoutY="375.0" mnemonicParsing="false" text="Siguiente paso" />
+      <Button layoutX="48.0" layoutY="376.0" mnemonicParsing="false" text="Paso anterior" />
+   </children>
+</AnchorPane>
