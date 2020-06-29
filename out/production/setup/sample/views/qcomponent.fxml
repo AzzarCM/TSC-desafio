@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.views.Qcomponent">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Qcomponent">
    <children>
       <Label layoutX="420.0" layoutY="79.0" prefHeight="64.0" prefWidth="161.0" text="Matriz Q">
          <font>
@@ -20,7 +20,7 @@
             <Image url="@../assets/img/matrixq.PNG" />
          </image>
       </ImageView>
-      <Button layoutX="14.0" layoutY="388.0" mnemonicParsing="false" text="Paso anterior" />
-      <Button layoutX="874.0" layoutY="388.0" mnemonicParsing="false" text="Siguiente paso" />
+      <Button layoutX="14.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
+      <Button layoutX="874.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
    </children>
 </AnchorPane>

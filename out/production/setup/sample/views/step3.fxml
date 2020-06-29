@@ -20,7 +20,7 @@
             <Font size="41.0" />
          </font>
       </Label>
-      <Button layoutX="68.0" layoutY="388.0" mnemonicParsing="false" text="Paso anterior" />
-      <Button layoutX="849.0" layoutY="388.0" mnemonicParsing="false" text="Siguiente paso" />
+      <Button layoutX="68.0" layoutY="388.0" mnemonicParsing="false"  onAction="#backTo" text="Paso anterior" />
+      <Button layoutX="849.0" layoutY="388.0" mnemonicParsing="false"  onAction="#goForward" text="Siguiente paso" />
    </children>
 </AnchorPane>

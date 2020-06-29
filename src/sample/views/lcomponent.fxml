@@ -8,15 +8,15 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.views.Lcomponent">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Lcomponent">
    <children>
       <ImageView fitHeight="486.0" fitWidth="747.0" layoutX="134.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/matrixl.PNG" />
          </image>
       </ImageView>
-      <Button layoutX="882.0" layoutY="388.0" mnemonicParsing="false" text="Siguiente paso" />
-      <Button layoutX="32.0" layoutY="388.0" mnemonicParsing="false" text="Paso anterior" />
+      <Button layoutX="882.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
+      <Button layoutX="32.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo"  text="Paso anterior" />
       <Label layoutX="427.0" layoutY="99.0" prefHeight="64.0" prefWidth="161.0" text="Matriz L">
          <font>
             <Font size="41.0" />

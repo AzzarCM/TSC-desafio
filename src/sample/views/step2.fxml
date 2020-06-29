@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.views.Step2">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Step2">
    <children>
       <Label layoutX="438.0" layoutY="64.0" prefHeight="64.0" prefWidth="125.0" text="Paso 2">
          <font>
@@ -21,7 +21,7 @@
             <Image url="@../assets/img/step2.PNG" />
          </image>
       </ImageView>
-      <Button layoutX="99.0" layoutY="415.0" mnemonicParsing="false" text="Paso anterior" />
-      <Button layoutX="854.0" layoutY="415.0" mnemonicParsing="false" text="Siguiente paso" />
+      <Button layoutX="99.0" layoutY="415.0" mnemonicParsing="false"  onAction="#backTo" text="Paso anterior" />
+      <Button layoutX="854.0" layoutY="415.0" mnemonicParsing="false"  onAction="#goForward" text="Siguiente paso" />
    </children>
 </AnchorPane>

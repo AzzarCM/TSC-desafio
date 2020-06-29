@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Step8.L1component">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.L1component">
    <children>
       <ImageView fitHeight="370.0" fitWidth="754.0" layoutX="123.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/matrizl1.PNG" />
          </image>
       </ImageView>
-      <Button layoutX="28.0" layoutY="388.0" mnemonicParsing="false" text="Paso anterior" />
-      <Button layoutX="891.0" layoutY="388.0" mnemonicParsing="false" text="Siguiente paso" />
+      <Button layoutX="28.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
+      <Button layoutX="891.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
    </children>
 </AnchorPane>

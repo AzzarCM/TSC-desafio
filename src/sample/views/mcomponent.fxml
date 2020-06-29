@@ -7,10 +7,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.views.Mcomponent">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Mcomponent">
    <children>
-      <Button layoutX="873.0" layoutY="388.0" mnemonicParsing="false" text="Siguiente paso" />
-      <Button layoutX="34.0" layoutY="388.0" mnemonicParsing="false" text="Paso anterior" />
+      <Button layoutX="873.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
+      <Button layoutX="34.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
       <Label layoutX="409.0" layoutY="79.0" prefHeight="64.0" prefWidth="178.0" text="Matriz M">
          <font>
             <Font size="41.0" />

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.views.Table">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Table">
    <children>
       <ImageView fitHeight="332.0" fitWidth="787.0" layoutX="111.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -14,6 +15,15 @@
          </image>
       </ImageView>
       <Button layoutX="890.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
-      <Button layoutX="25.0" layoutY="388.0" mnemonicParsing="false" onAction="#toBack" text="Paso anterior" />
+      <Button layoutX="25.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
+      <Label layoutX="251.0" layoutY="80.0" prefHeight="72.0" prefWidth="499.0" text="La tablad de conectividades">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="326.0" text="Nodo 1" />
+      <Label layoutX="486.0" layoutY="326.0" text="Nodo 2" />
+      <Label layoutX="621.0" layoutY="326.0" text="Nodo 3" />
+      <Label layoutX="750.0" layoutY="326.0" text="Nodo 4" />
    </children>
 </AnchorPane>

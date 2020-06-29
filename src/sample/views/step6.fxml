@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.views.Step6">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Step6">
    <children>
       <ImageView fitHeight="622.0" fitWidth="587.0" layoutX="220.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="193.0" AnchorPane.topAnchor="125.0">
          <image>
@@ -20,7 +20,7 @@
             <Font size="41.0" />
          </font>
       </Label>
-      <Button layoutX="70.0" layoutY="388.0" mnemonicParsing="false" text="Paso anterior" />
-      <Button layoutX="874.0" layoutY="388.0" mnemonicParsing="false" text="Siguiente paso" />
+      <Button layoutX="70.0" layoutY="388.0" mnemonicParsing="false"  onAction="#backTo" text="Paso anterior" />
+      <Button layoutX="874.0" layoutY="388.0" mnemonicParsing="false"  onAction="#goForward" text="Siguiente paso" />
    </children>
 </AnchorPane>

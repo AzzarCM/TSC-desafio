@@ -20,7 +20,7 @@ public class Conditions {
         window.show();
     }
     public void goForward(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent screenParent = FXMLLoader.load(getClass().getResource("/sample/views/assembly.fxml"));
+        Parent screenParent = FXMLLoader.load(getClass().getResource("/sample/views/mesh.fxml"));
         Scene tableViewScene = new Scene(screenParent);
 
         //obtenemos la informacion de estado

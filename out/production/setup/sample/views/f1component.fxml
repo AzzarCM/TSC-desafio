@@ -13,7 +13,7 @@
             <Image url="@../assets/img/matrixf1.PNG" />
          </image>
       </ImageView>
-      <Button layoutX="32.0" layoutY="388.0" mnemonicParsing="false" text="Paso anterior" />
-      <Button layoutX="891.0" layoutY="388.0" mnemonicParsing="false" text="Siguiente paso" />
+      <Button layoutX="32.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
+      <Button layoutX="891.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
    </children>
 </AnchorPane>

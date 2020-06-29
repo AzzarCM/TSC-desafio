@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Table.K5component">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.K5component">
    <children>
       <ImageView fitHeight="419.0" fitWidth="737.0" layoutX="134.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/matrixk5.PNG" />
          </image>
       </ImageView>
-      <Button layoutX="21.0" layoutY="388.0" mnemonicParsing="false" text="Paso anterior" />
-      <Button layoutX="884.0" layoutY="388.0" mnemonicParsing="false" text="Siguiente paso" />
+      <Button layoutX="21.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
+      <Button layoutX="884.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
    </children>
 </AnchorPane>
