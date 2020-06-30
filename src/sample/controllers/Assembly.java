@@ -4,16 +4,22 @@ import javafx.animation.PathTransition;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.*;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import javax.net.ssl.HandshakeCompletedEvent;
 import java.awt.*;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -26,6 +32,7 @@ public class Assembly implements Initializable, EventHandler<KeyEvent> {
     public Label title;
     public Line line3;
     public Line line4;
+    public Button home;
 
     public void displayPosition(MouseEvent event){
         textM.setText("X: = " + event.getX() + "Y: = " + event.getY());
@@ -49,11 +56,20 @@ public class Assembly implements Initializable, EventHandler<KeyEvent> {
     circle19,circle20,circle21,circle22,circle23,circle24,circle25,circle26,circle27,circle28,circle29,circle30,circle31,circle32,circle33
             ,circle34,circle35,circle36,circle37,circle38,circle39,circle40,circle41,circle42,circle43,circle44,circle45;
 
+    public void goHome(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent screenParent = FXMLLoader.load(getClass().getResource("/sample/views/sample.fxml"));
+        Scene tableViewScene = new Scene(screenParent);
+
+        //obtenemos la informacion de estado
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(tableViewScene);
+        window.show();
+    }
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        home.setVisible(false);
         Path path1 = new Path();
         path1.getElements().add(new MoveTo());
         path1.getElements().add(new LineTo(683.0-circle1.getLayoutX(),568.0-circle1.getLayoutY()));
@@ -509,7 +525,13 @@ public class Assembly implements Initializable, EventHandler<KeyEvent> {
                                         transition43.setDuration(Duration.seconds(6));
                                         transition43.setPath(path43);
                                         transition43.play();
-
+                                        transition43.setOnFinished(new EventHandler<ActionEvent>() {
+                                            @Override
+                                            public void handle(ActionEvent actionEvent) {
+                                                title.setText("EXITO, ENSAMBLAJE COMPLETADO :D");
+                                                home.setVisible(true);
+                                            }
+                                        });
                                     }
                                 });
                             }

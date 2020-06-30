@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Step2">
+<AnchorPane style="-fx-background-color: #656161;" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Step2">
    <children>
       <Label layoutX="438.0" layoutY="64.0" prefHeight="64.0" prefWidth="125.0" text="Paso 2">
          <font>
@@ -16,12 +16,12 @@
          </font>
       </Label>
       <Label layoutX="412.0" layoutY="120.0" text="Interpolamos nuestras incógnitas" />
-      <ImageView fitHeight="587.0" fitWidth="330.0" layoutX="336.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imagev" fitHeight="587.0" fitWidth="330.0" layoutX="336.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/step2.PNG" />
          </image>
       </ImageView>
-      <Button layoutX="99.0" layoutY="415.0" mnemonicParsing="false"  onAction="#backTo" text="Paso anterior" />
-      <Button layoutX="854.0" layoutY="415.0" mnemonicParsing="false"  onAction="#goForward" text="Siguiente paso" />
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="99.0" layoutY="415.0" mnemonicParsing="false"  onAction="#backTo" text="Paso anterior" />
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="854.0" layoutY="415.0" mnemonicParsing="false"  onAction="#goForward" text="Siguiente paso" />
    </children>
 </AnchorPane>

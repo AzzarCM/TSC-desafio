@@ -7,19 +7,28 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Dominio">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #656161;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Dominio">
    <children>
-      <ImageView fitHeight="557.0" fitWidth="607.0" layoutX="197.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imagev" fitHeight="557.0" fitWidth="607.0" layoutX="197.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/dominio.PNG" />
          </image>
       </ImageView>
-      <Button layoutX="49.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="paso anterior" />
-      <Button layoutX="850.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
-      <Label layoutX="340.0" layoutY="14.0" prefHeight="72.0" prefWidth="322.0" text="Nuestro dominio :)">
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="49.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="paso anterior" />
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="850.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
+      <Label alignment="CENTER" layoutX="227.0" layoutY="7.0" prefHeight="72.0" prefWidth="587.0" text="Dominio del modelo" textFill="WHITE">
          <font>
-            <Font name="Berlin Sans FB Demi Bold" size="39.0" />
+            <Font name="Berlin Sans FB Demi Bold" size="40.0" />
          </font>
       </Label>
    </children>
+   <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" fx:id="home" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="447.0" layoutY="722.0" mnemonicParsing="false" onAction="#goHome" prefHeight="69.0" prefWidth="98.0" text="Home">
+      <graphic>
+         <ImageView fitHeight="46.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../assets/img/casa.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </Button>
 </AnchorPane>

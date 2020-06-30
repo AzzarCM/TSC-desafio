@@ -5,7 +5,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Components">
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane style="-fx-background-color: #656161;" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Components">
    <children>
       <Label layoutX="224.0" layoutY="246.0" prefHeight="103.0" prefWidth="553.0" text="DEFINIENDO LOS">
          <font>
@@ -22,7 +24,16 @@
             <Font size="70.0" />
          </font>
       </Label>
-      <Button layoutX="40.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
-      <Button layoutX="855.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="40.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="855.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
    </children>
+   <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" fx:id="home" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="447.0" layoutY="722.0" mnemonicParsing="false" onAction="#goHome" prefHeight="69.0" prefWidth="98.0" text="Home">
+      <graphic>
+         <ImageView fitHeight="46.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../assets/img/casa.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </Button>
 </AnchorPane>

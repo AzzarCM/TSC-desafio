@@ -7,16 +7,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Mcomponent">
+<AnchorPane style="-fx-background-color: #656161;" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Mcomponent">
    <children>
-      <Button layoutX="873.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
-      <Button layoutX="34.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="873.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="34.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
       <Label layoutX="409.0" layoutY="79.0" prefHeight="64.0" prefWidth="178.0" text="Matriz M">
          <font>
             <Font size="41.0" />
          </font>
       </Label>
-      <ImageView fitHeight="603.0" fitWidth="735.0" layoutX="158.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imagev" fitHeight="603.0" fitWidth="735.0" layoutX="158.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/matrixm.PNG" />
          </image>

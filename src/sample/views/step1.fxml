@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Step1">
+<AnchorPane style="-fx-background-color: #656161;" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Step1">
    <children>
-      <ImageView fitHeight="454.0" fitWidth="514.0" layoutX="244.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imagev" fitHeight="454.0" fitWidth="514.0" layoutX="244.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/step1.PNG" />
          </image>
@@ -20,7 +20,16 @@
          </font>
       </Label>
       <Label layoutX="386.0" layoutY="120.0" text="Estableciendo las condiciones de contorno!" />
-      <Button layoutX="82.0" layoutY="387.0" mnemonicParsing="false" onAction="#backTo" text="paso anterior" />
-      <Button layoutX="863.0" layoutY="400.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="82.0" layoutY="387.0" mnemonicParsing="false" onAction="#backTo" text="paso anterior" />
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="863.0" layoutY="400.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
    </children>
+   <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" fx:id="home" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="447.0" layoutY="722.0" mnemonicParsing="false" onAction="#goHome" prefHeight="69.0" prefWidth="98.0" text="Home">
+      <graphic>
+         <ImageView fitHeight="46.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../assets/img/casa.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </Button>
 </AnchorPane>

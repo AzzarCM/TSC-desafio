@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.M1component">
+<AnchorPane style="-fx-background-color: #656161;" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.M1component">
    <children>
-      <Button layoutX="35.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
-      <Button layoutX="889.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
-      <ImageView fitHeight="374.0" fitWidth="744.0" layoutX="130.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="35.0" layoutY="388.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
+      <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="889.0" layoutY="388.0" mnemonicParsing="false" onAction="#goForward" text="Siguiente paso" />
+      <ImageView fx:id="imagev" fitHeight="374.0" fitWidth="744.0" layoutX="130.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/matrixm1.PNG" />
          </image>

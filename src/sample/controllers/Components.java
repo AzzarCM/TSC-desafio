@@ -28,4 +28,14 @@ public class Components {
         window.setScene(tableViewScene);
         window.show();
     }
+
+    public void goHome(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent screenParent = FXMLLoader.load(getClass().getResource("/sample/views/sample.fxml"));
+        Scene tableViewScene = new Scene(screenParent);
+
+        //obtenemos la informacion de estado
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(tableViewScene);
+        window.show();
+    }
 }

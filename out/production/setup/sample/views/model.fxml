@@ -9,18 +9,29 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Model">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #656161;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Model">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="57.0" layoutY="331.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
+            <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="57.0" layoutY="331.0" mnemonicParsing="false" onAction="#backTo" text="Paso anterior" />
          </children>
       </AnchorPane>
    </left>
    <right>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="54.0" layoutY="343.0" mnemonicParsing="false" onAction="#goForward" text="siguiente paso" />
+            <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" layoutX="54.0" layoutY="343.0" mnemonicParsing="false" onAction="#goForward" text="siguiente paso" />
+            <AnchorPane layoutX="-379.0" layoutY="-114.0">
+            <Button style="-fx-background-color: transparent; -fx-border-color: whitesmoke; -fx-border-width: 2;-fx-border-radius: 25px; -fx-text-fill: #F3F3F3;" fx:id="home" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="7.0" layoutY="700.0" mnemonicParsing="false" onAction="#goHome" prefHeight="69.0" prefWidth="98.0" text="Home">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/casa.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            </AnchorPane>
          </children>
       </AnchorPane>
    </right>
@@ -29,7 +40,7 @@
          <children>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Label layoutX="344.0" layoutY="9.0" prefHeight="72.0" prefWidth="312.0" text="Modelo a utilizar!">
+                  <Label layoutX="344.0" layoutY="9.0" prefHeight="72.0" prefWidth="312.0" text="Modelo a utilizar!" textFill="WHITE">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="39.0" />
                      </font>
@@ -39,7 +50,7 @@
          </children></VBox>
    </top>
    <center>
-      <ImageView fitHeight="374.0" fitWidth="597.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      <ImageView fx:id="imagev2" fitHeight="374.0" fitWidth="597.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
             <Image url="@../assets/img/modelo.PNG" />
          </image>
